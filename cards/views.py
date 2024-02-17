@@ -10,7 +10,16 @@ get_categories- возвращает карточку
 get_cards_by_category- возвращает карточку
 get_card_by_tag- возвращает карточку по тегу
 get_detail_card_by_id- возвращает детальную информацию о карточке
+
+Информация в шаблоны будет браться из базы данных, но пока мы сделаем переменные
+
 """
+
+info = {
+    "user_count": 2000,
+    "cards_count": 1002000,
+    "menu": ["Главная", "О проекте", "Каталог"],
+}
 
 
 def index(request):
@@ -20,7 +29,7 @@ def index(request):
     :param request:
     :return:
     """
-    return render(request, 'cards/main.html')
+    return render(request, 'cards/main.html', context=info)
 
 
 def about(request):
@@ -29,7 +38,7 @@ def about(request):
     :param request:
     :return:
     """
-    return render(request, 'cards/about.html')
+    return render(request, 'cards/about.html', context=info)
 
 
 def catalog(request):
