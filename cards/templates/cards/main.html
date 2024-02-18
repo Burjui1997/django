@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title><b>Первый шаблон<b></title>
-    <style type="text/css">
+    <style>
         .green {
             color: green;
         }
@@ -12,11 +12,11 @@
 <body>
 <nav>
     <ul>
-       {% for title in menu%}
-        <li {% if forloop.first %}
-            class="green"
-            {% endif %}>
-            {{ title }}
+       {% for item in menu%}
+        <li {% if forloop.first %} class="green" {% endif %}>
+<!--            <a href="{{item.url}}">{{item.title}}</a> Хард кодинг-->
+            <a href="{% url item.url_name %}">{{item.title}}</a>
+<!--            Хард Кодинг при динамических урлах, Главное не трогать имена-->
         </li>
         {% if not forloop.last %}<hr>
         {% endif %}

@@ -18,7 +18,22 @@ get_detail_card_by_id- возвращает детальную информац�
 info = {
     "user_count": 2000,
     "cards_count": 1002000,
-    "menu": ["Главная", "О проекте", "Каталог"],
+    "menu": [
+        {
+            "title": "Главная",
+            "url": "/",
+            "url_name": "index"
+        },
+        {
+            "title": "О проекте",
+            "url": "/about/",
+            "url_name": "about"
+        },
+        {
+            "title": "Каталог",
+            "url": "/cards/catalog/",
+            "url_name": "catalog"
+        }],
 }
 
 
@@ -47,7 +62,7 @@ def catalog(request):
     :param request:
     :return:
     """
-    return render(request, 'cards/catalog.html')
+    return render(request, 'cards/catalog.html', context=info)
 
 
 def get_categories(request):
@@ -56,7 +71,7 @@ def get_categories(request):
     :param request:
     :return:
     """
-    return HttpResponse("Категории")
+    return render(request, 'Base.html')
 
 
 def get_cards_by_category(request, slug):

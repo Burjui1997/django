@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Start">
+    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Продолжаем изучать шаблоны">
+      <change afterPath="$PROJECT_DIR$/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anki/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anki/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/templates/cards/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/templates/cards/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/catalog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/templates/cards/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +72,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\burju\PycharmProjects\mydjango" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.start_app">
     <configuration name="start_app" type="PythonConfigurationType" factoryName="Python">
       <module name="mydjango" />
@@ -204,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708174067460</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Продолжаем изучать шаблоны">
+      <option name="closed" value="true" />
+      <created>1708251396161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1708251396161</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,6 +241,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start" />
+    <MESSAGE value="Продолжаем изучать шаблоны" />
+    <option name="LAST_COMMIT_MESSAGE" value="Продолжаем изучать шаблоны" />
   </component>
 </project>
