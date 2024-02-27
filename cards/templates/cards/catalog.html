@@ -1,11 +1,10 @@
-<!--{% extends 'Base.html' %}-->
-<!--{% block content %}-->
-<!--<h1>Каталог карточек</h1>-->
-<!--<p>Содержимое каталога карточек</p>-->
-<!--<p> На текущий момент у нас {{cards_count}}</p>-->
-<!--{% endblock %}-->
-
-<!--{% block categories %}-->
-<!--<p>Привет из дочернего шаблоны</p>-->
-<!--{% endblock %}-->
+{% extends "base.html" %}
+{% block content %}
+<h1>Каталог карточек Anki для интервального повторения</h1>
+<p>Здесь вы можете выбрать карточки для изучения</p>
+<p>На текущий момент, у нас карточек: {{cards_count}} и пользователей: {{users_count}} </p>
+{% for card in cards %}
+    {% include "cards/include/card_preview.html" %}
+{% endfor %}
+{% endblock %}
 

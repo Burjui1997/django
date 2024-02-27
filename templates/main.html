@@ -1,12 +1,17 @@
 {% extends 'Base.html' %}
-{% block title %} Главная страница {% endblock %}
 
-{% block head %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'cards/static/cards/css/main.css' %}">
-{% endblock %}
+
+{% block title %}Главная страница{% endblock %}
 
 {% block content %}
-<h1>ИГОРЬ ПЕТУХ</h1>
-<p>Содержимое главной страницы</p>
+<div class="container-main">
+    <h1>Главная страница</h1>
+    <p>Добро пожаловать на главную страницу!</p>
+    <p>На сайте зарегистрировано {{ users_count }} пользователей.</p>
+</div>
+{% endblock %}
+
+
+{% block footer %}
+    <p class="copyright">Это футер из шаблона главной страницы</p>
 {% endblock %}

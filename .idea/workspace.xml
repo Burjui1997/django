@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Продолжаем изучать шаблоны 3">
-      <change afterPath="$PROJECT_DIR$/cards/templates/cards/card_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cards/templates/cards/card_preview.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anki/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anki/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/static/cards/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/cards/static/cards/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/templates/cards/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/templates/cards/card_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/card_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/templates/cards/card_preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/include/card_preview.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/templates/cards/catalog.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/catalog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/templates/cards/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/main.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/include/nav_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/include/nav_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +56,7 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="Develop" />
-                    <option name="lastUsedInstant" value="1708974518" />
+                    <option name="lastUsedInstant" value="1709049728" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
@@ -89,24 +88,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python tests.Python tests for tests.CardsAppTests.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_card_route.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_category_route.executor": "Run",
-    "Python.start_app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Develop",
-    "last_opened_file_path": "C:/Users/burju/PycharmProjects/mydjango",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_card_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_category_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start_app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/burju/PycharmProjects/mydjango&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\burju\PycharmProjects\mydjango" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static\Bootstrap" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static\cards" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\templates" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\templates\bs5" />
     </key>
   </component>
   <component name="RunManager" selected="Python.start_app">

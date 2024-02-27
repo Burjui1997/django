@@ -11,32 +11,32 @@
 
     <title>
         {% block title %}
+        ANKI - интервальное повторение
         {% endblock %}
     </title>
     {% block head %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'cards/css/main.css' %}" />
     {% endblock %}
-    <style>
-        {% block style %}
-        {% endblock %}
-    </style>
 </head>
 <body>
 <header>
-<nav>
-    {% include 'include/nav_menu.html' %}
-    {% block categories %}
-    {% endblock %}
-</nav>
+    <nav>
+        {% include 'include/nav_menu.html' %}
+        {% block categories %}
+        {% endblock %}
+    </nav>
 </header>
 {% block content %}
 {% endblock %}
-<script>
-     {% block script %}
-     {% endblock %}
-</script>
+<script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+
 </body>
-<footer>
+    <footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
     {% block footer %}
+      <p class="text-muted">Приложение интервального повторения "Anki"</p>
     {% endblock %}
+  </div>
 </footer>
 </html>

@@ -144,9 +144,10 @@ def get_card_by_tag(request, slug):
 
 def get_detail_card_by_id(request, card_id):
     """
-    Возвращает детальную информацию о карточке
-    :param request:
-    :param card_id:
-    :return:
+    Возвращает шаблон cards/templates/cards/card_detail.html с детальной информацией по карточке
     """
-    return HttpResponse(f"Карточка {card_id}")
+    card_by_id = [card for card in cards_dataset if card['id_card'] == card_id][0]
+    card = {
+        "card": card_by_id
+    }
+    return render(request, 'cards/card_detail.html', card)
