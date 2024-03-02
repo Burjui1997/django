@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Продолжаем изучать шаблоны 2">
-      <change afterPath="$PROJECT_DIR$/cards/static/cards/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/include/nav_menu.html" afterDir="false" />
+    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Продолжаем изучать шаблоны 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Base.html" afterDir="false" />
     </list>
@@ -18,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -37,6 +35,32 @@
     &quot;assignee&quot;: &quot;Burjui1997&quot;
   }
 }</component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Develop" />
+                    <option name="lastUsedInstant" value="1709049728" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1708974483" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -54,24 +78,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python tests.Python tests for tests.CardsAppTests.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_card_route.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_category_route.executor": "Run",
-    "Python.start_app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Develop",
-    "last_opened_file_path": "C:/Users/burju/PycharmProjects/mydjango",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_card_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_category_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start_app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/burju/PycharmProjects/mydjango&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\burju\PycharmProjects\mydjango" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static\Bootstrap" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static\cards" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\templates" />
+      <recent name="C:\Users\burju\PycharmProjects\mydjango\templates\bs5" />
     </key>
   </component>
   <component name="RunManager" selected="Python.start_app">
@@ -167,10 +195,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.CardsAppTests.test_card_route" />
         <item itemvalue="Python tests.Python tests for tests.CardsAppTests.test_category_route" />
-        <item itemvalue="Python tests.Python tests for tests.CardsAppTests" />
+        <item itemvalue="Python tests.Python tests for tests.CardsAppTests.test_card_route" />
         <item itemvalue="Python tests.Python tests for tests.CardsAppTests.test_app_loads" />
+        <item itemvalue="Python tests.Python tests for tests.CardsAppTests" />
+        <item itemvalue="Python tests.Python tests for tests.CardsAppTests.test_category_route" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708259190561</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Продолжаем изучать шаблоны 3">
+      <option name="closed" value="true" />
+      <created>1708974508385</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1708974508385</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -238,7 +275,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="date">
+                    <value>
+                      <list>
+                        <option value="1707669661535" />
+                        <option value="" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -248,6 +298,7 @@
     <MESSAGE value="Start" />
     <MESSAGE value="Продолжаем изучать шаблоны" />
     <MESSAGE value="Продолжаем изучать шаблоны 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Продолжаем изучать шаблоны 2" />
+    <MESSAGE value="Продолжаем изучать шаблоны 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Продолжаем изучать шаблоны 3" />
   </component>
 </project>
