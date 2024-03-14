@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Продолжаем изучать шаблоны 3">
+    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="первая миграция">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/Base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/Base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anki/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -267,7 +269,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708974508385</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Изучаем модели и создаем простую модель">
+      <option name="closed" value="true" />
+      <created>1709382807536</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709382807536</updated>
+    </task>
+    <task id="LOCAL-00008" summary="первая миграция">
+      <option name="closed" value="true" />
+      <created>1709383347528</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709383347528</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -299,6 +317,8 @@
     <MESSAGE value="Продолжаем изучать шаблоны" />
     <MESSAGE value="Продолжаем изучать шаблоны 2" />
     <MESSAGE value="Продолжаем изучать шаблоны 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Продолжаем изучать шаблоны 3" />
+    <MESSAGE value="Изучаем модели и создаем простую модель" />
+    <MESSAGE value="первая миграция" />
+    <option name="LAST_COMMIT_MESSAGE" value="первая миграция" />
   </component>
 </project>
