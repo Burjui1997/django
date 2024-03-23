@@ -21,14 +21,9 @@ from cards import views
 urlpatterns = [
     # Админка
     path('admin/', admin.site.urls),
-    # Маршруты для меню
-    # path('', views.index, name='index'),
-    # path('about/', views.about, name='about'),
-    # path('catalog/', views.catalog),
-    # Маршруты для карточек
     path('cards/', include('cards.urls')),
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('cards/catalog/', views.catalog, name='catalog'),
-    path('cards/<int:card_id>/detail/', views.get_detail_card_by_id, name='card_detail'),
+    # path('cards/<int:card_id>/detail/', views.get_detail_card_by_id, name='card_detail'),
 ]

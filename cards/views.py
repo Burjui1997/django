@@ -1,5 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from .models import Card
+from django.shortcuts import get_object_or_404
+from django.db.models import F
 
 """
 Index- возвращает главную страницу шаблона cards/main.html
@@ -105,12 +108,31 @@ def about(request):
 
 
 def catalog(request):
-    """
-    Возвращает каталог карточек
-    :param request:
-    :return:
-    """
-    return render(request, 'cards/catalog.html', context=info)
+    # Считываем параметры из GET запроса
+    sort = request.GET.get('sort', 'upload_date')  # по умолчанию сортируем по дате загрузки
+    order = request.GET.get('order', 'desc')  # по умолчанию используем убывающий порядок
+
+    # Сопоставляем параметр сортировки с полями модели
+    valid_sort_fields = {'upload_date', 'views', 'adds'}
+    if sort not in valid_sort_fields:
+        sort = 'upload_date'  # Возвращаемся к сортировке по умолчанию, если передан неверный ключ сортировки
+
+    # Обрабатываем порядок сортировки
+    if order == 'asc':
+        order_by = sort
+    else:
+        order_by = f'-{sort}'
+
+    # Получаем отсортированные карточки
+    cards = Card.objects.all().order_by(order_by)
+
+    # Подготавливаем контекст и отображаем шаблон
+    context = {
+        'cards': cards,
+        'cards_count': cards.count(),
+        'menu': info['menu'],
+    }
+    return render(request, 'cards/catalog.html', context=context)
 
 
 def get_categories(request):
@@ -132,22 +154,52 @@ def get_cards_by_category(request, slug):
     return HttpResponse(f"Карточки по категориям {slug}")
 
 
-def get_card_by_tag(request, slug):
+def get_cards_by_tag(request, tag_id):
     """
-    Возвращает карточку по тегу
+    Возвращает карточку
     :param request:
-    :param slug:
+    :param tag_id:
     :return:
     """
-    return HttpResponse(f"Карточки по тегам {slug}")
+    cards = Card.objects.filter(tags=tag_id)
+    context = {
+        'cards': cards,
+        'cards_count': cards.count(),
+        'menu': info['menu'],
+    }
+    return render(request, 'cards/catalog.html', context)
 
 
 def get_detail_card_by_id(request, card_id):
     """
     Возвращает шаблон cards/templates/cards/card_detail.html с детальной информацией по карточке
     """
-    card_by_id = [card for card in cards_dataset if card['id_card'] == card_id][0]
     card = {
-        "card": card_by_id
+        "card": get_object_or_404(Card, id=card_id),
+        "menu": info["menu"]
     }
-    return render(request, 'cards/card_detail.html', card)
+
+    return render(request, 'cards/card_detail.html', status=200, context=card)
+
+def get_detail_card_by_id(request, card_id):
+    """
+    /cards/<int:card_id>/detail/
+    Возвращает шаблон cards/templates/cards/card_detail.html с детальной информацией по карточке
+    """
+
+    # Добываем карточку из БД через get_object_or_404
+    # если карточки с таким id нет, то вернется 404
+    # Используем F object для обновления счетчика просмотров (views)
+
+    card_obj = get_object_or_404(Card, pk=card_id)
+    card_obj.views = F('views') + 1
+    card_obj.save()
+
+    card_obj.refresh_from_db()  # Обновляем данные из БД
+
+    card = {
+        "card": card_obj,
+        "menu": info["menu"],
+    }
+
+    return render(request, 'cards/card_detail.html', card, status=200)

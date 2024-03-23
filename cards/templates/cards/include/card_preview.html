@@ -13,7 +13,7 @@
         <p class="card-text"><small class="text-muted">Категория: {{ card.category }}</small></p>
         <p class="card-text">
           Теги:
-          {% for tag in card.tags %}
+          {% for tag in card.tags.all %}
             <span class="badge bg-secondary">{{ tag }}</span>
           {% endfor %}
         </p>
@@ -22,7 +22,7 @@
           <div>
             <i class="bi bi-eye"></i> {{ card.views_count }}
             <i class="bi bi-star-fill"></i> {{ card.favorites_count }}
-            <a href="{% url 'detail_card_by_id' card.id_card %}" class="btn btn-dark btn-sm" role="button">Подробнее</a>
+            <a href="{% url 'detail_card_by_id' card_id=card.pk %}" class="btn btn-dark btn-sm" role="button">Подробнее</a>
           </div>
         </div>
       </div>
