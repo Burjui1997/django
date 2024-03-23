@@ -1,52 +1,49 @@
 from django.db import models
 
 
+class Category(models.Model):
+    category_id = models.AutoField(primary_key=True, db_column='CategoryID')
+    name = models.CharField(max_length=255, unique=True, db_column='Name')
+
+    class Meta:
+        db_table = 'Categories'
+
+    def __str__(self):
+        return self.name
+
+
+class Tag(models.Model):
+    tag_id = models.AutoField(primary_key=True, db_column='TagID')
+    name = models.CharField(max_length=255, unique=True, db_column='Name')
+
+    class Meta:
+        db_table = 'Tags'
+
+
 class Card(models.Model):
-    question = models.CharField(max_length=255)
-    answer = models.TextField(max_length=5000)
-    upload_date = models.DateTimeField(auto_now_add=True)
-    views = models.IntegerField(default=0)
-    adds = models.IntegerField(default=0)
-    tags = models.JSONField()
+    card_id = models.AutoField(primary_key=True, db_column='CardID')
+    question = models.TextField(db_column='Question')
+    answer = models.TextField(db_column='Answer')
+    category_id = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, db_column='CategoryID')
+    upload_date = models.DateTimeField(auto_now_add=True, db_column='UploadDate')
+    views = models.IntegerField(default=0, db_column='Views')
+    favorites = models.IntegerField(default=0, db_column='Favorites')
+    tags = models.ManyToManyField('Tag', related_name='cards', through='CardTags')
 
     class Meta:
         db_table = 'Cards'
-        verbose_name = 'Карточка'
-        verbose_name_plural = 'Карточки'
 
     def __str__(self):
-        return f'Карточка {self.question} - {self.answer[:50]}'
+        return self.question
 
 
-# from cards.models import Card
-# from django.utils import timezone
-# import json
-#
-# # Пример карточек
-# cards_data = [
-#     {
-#         "question": "Что такое PEP 8?",
-#         "answer": "PEP 8 — это документ, описывающий соглашение о том, как писать код для языка Python, включая стандарты оформления кода.",
-#         "tags": json.dumps(["Python", "PEP 8", "стиль кода"])
-#     },
-#     {
-#         "question": "Как в Python создать виртуальное окружение?",
-#         "answer": "Используйте команду `python -m venv your_env_name` для создания виртуального окружения.",
-#         "tags": json.dumps(["Python", "виртуальное окружение", "venv"])
-#     },
-#     {
-#         "question": "Что делает оператор `yield`?",
-#         "answer": "Оператор `yield` используется в функциях-генераторах и позволяетфункции возвращать промежуточные результаты работы, останавливаясь на каждом `yield`и возобновляя выполнение с этого места.",
-#         "tags": json.dumps(["Python", "yield", "генераторы"])
-#     },
-#     {
-#         "question": "Какие типы данных в Python являются неизменяемыми?",
-#         "answer": "Неизменяемыми типами данных в Python являются числа (int, float),строки (str) и кортежи (tuple).",
-#         "tags": json.dumps(["Python", "типы данных", "неизменяемые типы"])
-#     },
-#     {
-#         "question": "Что такое list comprehension и как его использовать?",
-#         "answer": "List comprehension — это синтаксическая конструкция,предназначенная для создания списков из других списков, применяя к каждому элементунекоторое выражение или фильтр.",
-#         "tags": json.dumps(["Python", "list comprehension", "списки"])
-#     }
-# ]
+class CardTags(models.Model):
+    card = models.ForeignKey('Card', on_delete=models.CASCADE, db_column='CardID')
+    tag = models.ForeignKey('Tag', on_delete=models.CASCADE, db_column='TagID')
+
+    class Meta:
+        db_table = 'CardTags'
+        unique_together = (('card', 'tag'),)
+
+    def __str__(self):
+        return f'{self.card} - {self.tag}'

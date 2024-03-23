@@ -15,7 +15,7 @@
 <!--            <p class="card-text"> {% markdown_to_html card.answer %} </p>-->
             <p class="card-text">
                 Теги:
-                {% for tag in card.tags %}
+                {% for tag in card.tags.all %}
                 <span class="badge bg-secondary">{{ tag }}</span>
                 {% endfor %}
             </p>

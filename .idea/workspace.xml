@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="первая миграция">
-      <change afterPath="$PROJECT_DIR$/cards/migrations/0001_initial.py" afterDir="false" />
+    <list default="true" id="aa8c50d2-de82-48ac-9e5d-8794012423f7" name="Changes" comment="Новые карточки с базы данных">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anki/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anki/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/anki/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/migrations/0001_initial.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/templates/cards/card_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/card_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/templates/cards/include/card_preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templates/cards/include/card_preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards/templatetags/markdown_to_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/templatetags/markdown_to_html.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cards/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards/views.py" afterDir="false" />
     </list>
@@ -85,21 +85,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Python tests.Python tests for tests.CardsAppTests.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_card_route.executor": "Run",
-    "Python tests.Python tests for tests.CardsAppTests.test_category_route.executor": "Run",
-    "Python.start_app.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "Develop",
-    "last_opened_file_path": "C:/Users/burju/PycharmProjects/mydjango",
-    "settings.editor.selected.configurable": "preferences.fileTypes"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_app_loads.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_card_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python tests.Python tests for tests.CardsAppTests.test_category_route.executor&quot;: &quot;Run&quot;,
+    &quot;Python.start_app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Develop&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/burju/PycharmProjects/mydjango&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\burju\PycharmProjects\mydjango\cards\static\Bootstrap" />
